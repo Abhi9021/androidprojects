@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Studentdetails">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application Form"
+        android:textSize="50dp"
+        android:id="@+id/txtheading"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtheading"
+        android:layout_marginTop="50dp"
+        android:hint="Enter student name" />
+
+    <TextView
+        android:id="@+id/txtsname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtsearch"
+        android:layout_gravity="left"
+        android:text="Student Name"
+        android:textColor="@color/purple_200"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edtsname"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtsearch"
+        android:layout_toRightOf="@+id/txtsname" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Mobile No"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:textColor="@color/purple_200"
+        android:id="@+id/txtmob"
+        android:layout_gravity="left"
+        android:layout_below="@+id/edtsname"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/edtmob"
+        android:layout_below="@+id/edtsname"
+        android:layout_toRightOf="@+id/txtsname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Address"
+        android:textSize="25dp"
+        android:textColor="@color/purple_200"
+        android:id="@+id/txtaddress"
+        android:layout_gravity="left"
+        android:layout_below="@+id/txtmob"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/edtaddress"
+        android:layout_below="@+id/edtmob"
+        android:layout_toRightOf="@+id/txtsname"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/btnsave"
+        android:layout_below="@+id/txtaddress"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:id="@+id/btnupdate"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/btnsave"
+        android:layout_below="@+id/edtaddress"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/btndelete"
+        android:layout_below="@+id/btnsave"/>
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnupdate"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/btndelete"
+        android:text="Search" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsearcha"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/btndelete"
+        android:text="Search All" />
+
+</RelativeLayout>

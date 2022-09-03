@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">firebase</string>
+    <string-array name="mcq">
+        <item>Java introuction</item>
+        <item>java concepts</item>
+        <item> java 1</item>
+        <item>java 2</item>
+    </string-array>
+    <string-array name="topics">
+        <item>java introduction</item>
+        <item>java basic</item>
+    </string-array>
+</resources>
